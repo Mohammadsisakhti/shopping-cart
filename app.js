@@ -194,13 +194,13 @@ class UI {
       removeQuantity.previousElementSibling.innerText = remove.quantity;
 
       // When the number goes below one
-      if (remove.quantity < 1) {
+      if (remove.quantity === 0) {
         const removeItem = e.target;
         const remove = cart.find(
           (p) => p.id === parseInt(removeItem.dataset.id)
         );
-        this.removeItem(remove.id);
         cartContent.removeChild(removeItem.parentElement.parentElement);
+        this.removeItem(remove.id);
       }
     }
   }
@@ -294,5 +294,4 @@ searchInput.addEventListener("input", (e) => {
   // Return value to show product to main page
   ui.showProducts(productsData, filters.searchItem);
   ui.getAddCartBtns();
-  ui.logicCart();
 });
