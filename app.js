@@ -194,7 +194,7 @@ class UI {
       removeQuantity.previousElementSibling.innerText = remove.quantity;
 
       // When the number goes below one
-      if (remove.quantity === 0) {
+      if (remove.quantity < 0) {
         const removeItem = e.target;
         const remove = cart.find(
           (p) => p.id === parseInt(removeItem.dataset.id)
