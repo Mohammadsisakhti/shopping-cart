@@ -1,4 +1,4 @@
-import { productsData } from "./prducts.js";
+import { productsData } from "./products.js";
 
 const modalCart = document.querySelector(".modal-cart");
 const backdrop = document.querySelector(".backdrop");
