@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="head-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="head-title">
+          <h1>Apple Shop</h1>
+          <input
+            type="text"
+            name="search-box"
+            class="search-input"
+            placeholder="Search ..."
+          />
+        </div>
+        <div class="head-cart">
+          <i class="fa-solid fa-cart-plus"></i>
+          <p class="cart-items">0</p>
+        </div>
+      </div>
+    </header>
+    <div class="backdrop"></div>
+    <div class="modal-cart">
+      <div class="cart-title">
+        <h3>Your Cart</h3>
+      </div>
+      <div class="cart-content"></div>
+      <!-- <div class="cart-content">
+        <img
+          class="cart-image"
+          src="./images/macbook-pro-m2.webp"
+          alt="Cart Images"
+        />
+        <div class="cart-product-disc">
+          <p class="ç">MacBook Pro M2 2022</p>
+          <p class="product-price">1200 $</p>
+        </div>
+        <div class="cart-quantity">
+          <i class="fa-solid fa-chevron-up"></i>
+          <p>0</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cart-trsh">
+          <i class="fa-regular fa-trash-can" data-id=${products.id} ></i>
+        </div>
+      </div> -->
+      <div class="cart-complete">
+        <div class="total-price">
+          <p>Total :</p>
+          <p class="total-price-price">0 $</p>
+        </div>
+        <div class="buttons">
+          <button class="btn clear-btn">Clear Cart</button>
+          <button class="btn confirm-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="title-container">
+          <h2>Our Product</h2>
+        </div>
+        <div class="products-container">
+          <!-- <div class="product">
+            <img
+              src="./images/iphone14.png"
+              alt="Product Image"
+              class="product-image"
+            />
+            <div class="product-disc">
+              <p class="product-price">1200 $</p>
+              <p>iPhone 14 Pro Max</p>
+            </div>
+            <div class="product-add-cart">
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
