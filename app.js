@@ -166,8 +166,8 @@ class UI {
     if (e.target.classList.contains("fa-trash-can")) {
       const removeItem = e.target;
       const remove = cart.find((p) => p.id === parseInt(removeItem.dataset.id));
-      this.removeItem(remove.id);
       cartContent.removeChild(removeItem.parentElement.parentElement);
+      this.removeItem(remove.id);
     }
     // Click on the up chevron
     else if (e.target.classList.contains("fa-chevron-up")) {
@@ -194,7 +194,7 @@ class UI {
       removeQuantity.previousElementSibling.innerText = remove.quantity;
 
       // When the number goes below one
-      if (remove.quantity < 0) {
+      if (remove.quantity < 1) {
         const removeItem = e.target;
         const remove = cart.find(
           (p) => p.id === parseInt(removeItem.dataset.id)
